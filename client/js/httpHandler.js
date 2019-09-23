@@ -17,17 +17,17 @@
   setInterval(ajaxFetchSwimCommands, 2000);
 
   /////////////////////////////////////////////////////////////////////
-  // The ajax file uplaoder is provided for your convenience!
+  // The ajax file uploader is provided for your convenience!
   // Note: remember to fix the URL below.
   /////////////////////////////////////////////////////////////////////
 
-  const ajaxFileUplaod = (file) => {
+  const ajaxFileUpload = (file) => {
     var formData = new FormData();
     formData.append('file', file);
     $.ajax({
       type: 'POST',
       data: formData,
-      url: 'FILL_ME_IN',
+      url: serverUrl,
       cache: false,
       contentType: false,
       processData: false,
@@ -53,7 +53,7 @@
       return;
     }
 
-    ajaxFileUplaod(file);
+    ajaxFileUpload(file);
   });
 
 })();

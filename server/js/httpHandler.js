@@ -32,6 +32,10 @@ module.exports.router = (req, res, next = ()=>{}) => {
         res.write(cmd);
       }
     }
+    if (req.method === 'POST') {
+      // set uploaded image as background
+      console.log('set background image');
+    }
     res.end();
     next();
   } else if (req.url === '/' + backgroundImageFile) {
