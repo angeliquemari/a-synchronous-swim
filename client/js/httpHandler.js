@@ -16,7 +16,7 @@
     });
   };
   // setInterval(ajaxFetchSwimCommands, 2000);
-  setTimeout(ajaxFetchSwimCommands, 1000);
+  setTimeout(ajaxFetchSwimCommands, 0);
 
   /////////////////////////////////////////////////////////////////////
   // The ajax file uploader is provided for your convenience!
