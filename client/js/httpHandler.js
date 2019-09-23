@@ -11,10 +11,12 @@
       },
       error: () => {
         console.log('Failed to fetch swim commands');
-      }
+      },
+      complete: setTimeout(ajaxFetchSwimCommands, 200)
     });
   };
-  setInterval(ajaxFetchSwimCommands, 2000);
+  // setInterval(ajaxFetchSwimCommands, 2000);
+  setTimeout(ajaxFetchSwimCommands, 1000);
 
   /////////////////////////////////////////////////////////////////////
   // The ajax file uploader is provided for your convenience!
